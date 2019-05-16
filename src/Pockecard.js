@@ -14,13 +14,14 @@ class Pockecard extends Component{
 
         return(
             <div className="Pockecard">
-                <h1>{this.props.name}</h1>
+                <h1 className="Pockecard-title">{this.props.name}</h1>
                 <img src={imgSrc} alt={this.props.name}/> 
-                <div>Type: {this.props.type}</div>
-                <div>EXP: {this.props.experience}</div>
+                <div className="pockecard-data">Type: {this.props.type}</div>
+                <div className="pockecard-data">EXP: {this.props.experience}</div>
             </div>
         )
     }
 }
 
 export default Pockecard;
+

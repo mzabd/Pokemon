@@ -1,3 +1,17 @@
 .Pockecard{
-    border: 2px solid palevioletred;
+    width: 300px;
+    padding: 5px;
+    margin: .6rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 7px 10px 12px -5px rgb(0,0,0, .55);
+    border-radius: 3px;
+}
+
+.Pockecard-data{
+    font-size: 80%;
+}
+
+.Pockecard-title{
+
 }
