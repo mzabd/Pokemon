@@ -1,0 +1,10 @@
+// this project is about pockemon: 
+- on the basis of group of pockemon experince one group will be winner
+- each pockemon will be with a pockecard which includes its id, name , type, and experience
+
+
+Walkthrough:
+============
+1/ remome everything from App.js   execept retrunin the main div
+2/create a new component in src called Pockecard.js for retrive a single pocke card wiht style sheet
+3/Create a pockedex component that will render a bunch of pockecard also a css file for it
