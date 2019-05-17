@@ -18,13 +18,22 @@ class Pockedex extends Component{
     //       ]
     // }
     render(){
-
+        //we can use condition here and use that in  return 
+        let title;
+        if(this.props.isWinner){
+            title = <h1 className="Pockedex-winner">Winning Hand</h1>
+        }else{
+            title = <h1 className="Pockedex-looser">Loosing Hand</h1>
+        }
         return(
             <div className="Pockedex">
-                <h1>Pockedex</h1>
-                <p>Total experience: {this.props.exp}</p>
-                <p>{this.props.isWinner ? 'Winner' : 'Looser'}</p>
+                {title}
+                <h4>Total experience: {this.props.exp}</h4>
+                {/* <p className={this.props.isWinner ? "Pockedex-winner":"Pockedex-looser"}>{this.props.isWinner ? 'WINNER!!' : 'LOOSER'}</p> */}
+               {/* instead of above condtition */}
+               
                 {/* looping pockemong array form the default props */}
+                
                 <div className="Pockedex-cards">
                     {this.props.pockemon.map( (p) =>(
                         // use single pockecard component

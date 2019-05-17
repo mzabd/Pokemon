@@ -17,10 +17,13 @@ class Pockecard extends Component{
 
         return(
             <div className="Pockecard">
-                <h1 className="Pockecard-title">{this.props.name}</h1>
-                <img src={imgSrc} alt={this.props.name}/> 
-                <div className="pockecard-data">Type: {this.props.type}</div>
-                <div className="pockecard-data">EXP: {this.props.experience}</div>
+                <h2 className="Pockecard-title">{this.props.name}</h2>
+                <div className="Pockecard-img">
+                    <img  src={imgSrc} alt={this.props.name}   /> 
+                </div>
+                
+                <div className="Pockecard-data">Type: {this.props.type}</div>
+                <div className="Pockecard-data">EXP: {this.props.experience}</div>
             </div>
         )
     }
@@ -28,3 +31,4 @@ class Pockecard extends Component{
 
 export default Pockecard;
 
+// width="150" height="150"

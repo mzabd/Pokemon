@@ -1,5 +1,17 @@
+.Pockedex{
+    text-align: center;
+}
+
 .Pockedex-cards{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.Pockedex-winner{
+    color: green;
+}
+
+.Pockedex-looser{
+    color:red;
 }
